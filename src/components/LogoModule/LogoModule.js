@@ -1,31 +1,30 @@
 
 import React from "react";
-import "./Logo.css";
+import "./LogoModule.css";
 
-const Logo = props => (
+const LogoModule = props => (
     <div className="card">
         <div className="img-container">
             <img alt={props.name} src={props.image} />
         </div>
         <div className="content">
-            <img src={logoCyan} className="App-logo-tester" alt="logo" />
             <ul>
                 <li>
                     <strong>Name:</strong> {props.name}
                 </li>
                 <li>
-                    <strong>Occupation:</strong> {props.occupation}
+                    <strong>image:</strong> {props.image}
                 </li>
                 <li>
-                    <strong>Location:</strong> {props.location}
+                    <strong>id:</strong> {props.id}
                 </li>
             </ul>
         </div>
-        <span onClick={() => props.removeFriend(props.id)} className="remove">
+        <span onClick={() => props.removeLogo(props.id)} className="remove">
             𝘅
         </span>
     </div>
 );
 
-export default Logo;
+export default LogoModule;
 
