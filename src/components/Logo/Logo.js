@@ -1,13 +1,14 @@
 
 import React from "react";
-import "./FriendCard.css";
+import "./Logo.css";
 
-const FriendCard = props => (
+const Logo = props => (
     <div className="card">
         <div className="img-container">
             <img alt={props.name} src={props.image} />
         </div>
         <div className="content">
+            <img src={logoCyan} className="App-logo-tester" alt="logo" />
             <ul>
                 <li>
                     <strong>Name:</strong> {props.name}
@@ -26,5 +27,5 @@ const FriendCard = props => (
     </div>
 );
 
-export default FriendCard;
+export default Logo;
 

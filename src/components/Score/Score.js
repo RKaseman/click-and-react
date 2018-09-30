@@ -14,13 +14,9 @@ class Score extends React.Component {
         this.setState({ count: this.state.count + 1 });
     };
 
-    // The render method returns the JSX that should be rendered
     render() {
         return (
             <div className="card text-center">
-                <div className="card-header bg-primary text-white">
-                    *
-                </div>
                 <div className="card-body">
                     <p className="card-text">Current Score: {this.state.count}</p>
                     <button className="btn btn-primary" onClick={this.handleIncrement}>
