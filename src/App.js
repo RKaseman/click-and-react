@@ -8,7 +8,9 @@ import logoCyan from './components/Logo/logoCyan.svg';
 import logoGreen from './components/Logo/logoGreen.svg';
 import logoGrey from './components/Logo/logoGrey.svg';
 import logoLime from './components/Logo/logoLime.svg';
+import logoLtGrey from './components/Logo/logoLtGrey.svg';
 import logoOrange from './components/Logo/logoOrange.svg';
+import logoPink from './components/Logo/logoPink.svg';
 import logoPurple from './components/Logo/logoPurple.svg';
 import logoRed from './components/Logo/logoRed.svg';
 import logoYellow from './components/Logo/logoYellow.svg';
@@ -37,18 +39,13 @@ class App extends Component {
                     <br />
                     <img src={logoGrey} className="App-logo-tester" alt="logo" />
                     <img src={logoLime} className="App-logo-tester" alt="logo" />
+                    <img src={logoLtGrey} className="App-logo-tester" alt="logo" />
                     <img src={logoOrange} className="App-logo-tester" alt="logo" />
-                    <img src={logoPurple} className="App-logo-tester" alt="logo" />
                     <br />
+                    <img src={logoPink} className="App-logo-tester" alt="logo" />
+                    <img src={logoPurple} className="App-logo-tester" alt="logo" />
                     <img src={logoRed} className="App-logo-tester" alt="logo" />
                     <img src={logoYellow} className="App-logo-tester" alt="logo" />
-                    <img src={logo} className="App-logo-tester" alt="logo" />
-                    <img src={logo} className="App-logo-tester" alt="logo" />
-                    <br />
-                    <img src={logo} className="App-logo-tester" alt="logo" />
-                    <img src={logo} className="App-logo-tester" alt="logo" />
-                    <img src={logo} className="App-logo-tester" alt="logo" />
-                    <img src={logo} className="App-logo-tester" alt="logo" />
                 </div>
             </div>
         );
