@@ -35,7 +35,6 @@ class App extends Component {
                             randomOrder={this.randomOrder}
                             id={logo.id}
                             key={logo.id}
-                            name={logo.name}
                             image={logo.image}
                         />
                     ))}

@@ -9,13 +9,9 @@ const LogoModule = props => {
             <div className="img-container">
                 <img alt={props.name} src={props.image} onClick={() => props.randomOrder(props.id)} className="remove"/>
             </div>
-            <div className="content">
-                <p>
-                    <strong>Name:</strong> {props.name}
-                </p>
-            </div>
         </div>
         );
     };
+    
 export default LogoModule;
 
