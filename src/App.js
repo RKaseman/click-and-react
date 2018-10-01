@@ -1,5 +1,6 @@
 
 import React, { Component } from "react";
+import logo from './logo.svg';
 import LogoModule from "./components/LogoModule";
 import Score from "./components/Score";
 import Title from "./components/Title";
@@ -12,19 +13,24 @@ class App extends Component {
         logos
     };
 
-    removeLogo = id => {
+    randomOrder = id => {
         const logos = this.state.logos.sort(logo => logo.id !== id);
         this.setState({ logos });
     };
 
     render() {
         return (
+            <div>
+            <header className="App-header">
+                <img src={logo} className="App-logo" alt="logo" />
+                <h1 className="App-title">Welcome to React</h1>
+            </header>
             <Wrapper>
                 <Score />
-                <Title>Logos List</Title>
+                <Title>Don't click the same image twice</Title>
                 {this.state.logos.map(logo => (
                     <LogoModule
-                        removeLogo={this.removeLogo}
+                        randomOrder={this.randomOrder}
                         id={logo.id}
                         key={logo.id}
                         name={logo.name}
@@ -32,6 +38,7 @@ class App extends Component {
                     />
                 ))}
             </Wrapper>
+            </div>
         );
     }
 }

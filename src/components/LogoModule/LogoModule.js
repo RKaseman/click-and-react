@@ -7,7 +7,7 @@ const LogoModule = props => {
     return (
         <div className="card">
             <div className="img-container">
-                <img alt={props.name} src={props.image} onClick={() => props.removeLogo(props.id)} className="remove"/>
+                <img alt={props.name} src={props.image} onClick={() => props.randomOrder(props.id)} className="remove"/>
             </div>
             <div className="content">
                 <p>
