@@ -13,7 +13,7 @@ class App extends Component {
     };
 
     removeLogo = id => {
-        const logos = this.state.logos.filter(logo => logo.id !== id);
+        const logos = this.state.logos.sort(logo => logo.id !== id);
         this.setState({ logos });
     };
 
@@ -37,3 +37,4 @@ class App extends Component {
 }
 
 export default App;
+

@@ -7,19 +7,14 @@ const LogoModule = props => {
     return (
         <div className="card">
             <div className="img-container">
-                <img alt={props.name} src={props.image} />
+                <img alt={props.name} src={props.image} onClick={() => props.removeLogo(props.id)} className="remove"/>
             </div>
             <div className="content">
-                <ul>
-                    <li>
-                        <strong>Name:</strong> {props.name}
-                    </li>
-                </ul>
+                <p>
+                    <strong>Name:</strong> {props.name}
+                </p>
             </div>
-            <span onClick={() => props.removeLogo(props.id)} className="remove">
-                ?
-            </span>
-            </div>
+        </div>
         );
     };
 export default LogoModule;

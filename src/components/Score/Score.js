@@ -15,7 +15,9 @@ class Score extends React.Component {
         return (
             <div className="header">
                 <div className="score">
-                    <p>Current Score: {this.state.count}</p>
+                    <p>
+                        Current Score: {this.state.count}
+                    </p>
                     <button onClick={this.handleIncrement}>
                         Increment
                     </button>
