@@ -20,24 +20,24 @@ class App extends Component {
 
     render() {
         return (
-            <div>
-            <header className="App-header">
-                <img src={logo} className="App-logo" alt="logo" />
-                <h1 className="App-title">Welcome to React</h1>
-            </header>
-            <Wrapper>
-                <Score />
-                <Title>Don't click the same image twice</Title>
-                {this.state.logos.map(logo => (
-                    <LogoModule
-                        randomOrder={this.randomOrder}
-                        id={logo.id}
-                        key={logo.id}
-                        name={logo.name}
-                        image={logo.image}
-                    />
-                ))}
-            </Wrapper>
+            <div className="App">
+                <Wrapper>
+                <header className="App-header flex-container">
+                    <img src={logo} className="App-logo" alt="logo" />
+                    <h1 className="App-title">Click-and-React<br />Don't click the same image twice</h1>
+                        <Score />
+                </header>
+                <Title>[del]</Title>
+                    {this.state.logos.map(logo => (
+                        <LogoModule
+                            randomOrder={this.randomOrder}
+                            id={logo.id}
+                            key={logo.id}
+                            name={logo.name}
+                            image={logo.image}
+                        />
+                    ))}
+                </Wrapper>
             </div>
         );
     }

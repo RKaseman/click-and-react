@@ -9,8 +9,12 @@ class Score extends React.Component {
     };
 
     handleIncrement = () => {
-        this.setState({ count: this.state.count + 1 });
-        this.setState({ totalCount: this.state.totalCount + 1 });
+        if (this.state.totalCount < 12) {
+        this.setState({
+            count: this.state.count + 1,
+            totalCount: this.state.totalCount + 1
+        });
+        }
     };
 
     render() {
