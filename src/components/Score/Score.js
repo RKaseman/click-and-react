@@ -4,28 +4,23 @@ import "./Score.css";
 
 class Score extends React.Component {
     state = {
-        count: 0,
-        totalCount: 0
+        count: 0
     };
 
     handleIncrement = () => {
         if (this.state.totalCount < 12) {
         this.setState({
-            count: this.state.count + 1,
-            totalCount: this.state.totalCount + 1
+            count: this.state.count + 1
         });
         }
     };
 
     render() {
         return (
-            <div className="header">
-                <div className="score">
+            <div className="headerLeft">
+                <div className="scoreLeft">
                     <p>
                         Current Score: {this.state.count}
-                    </p>
-                    <p>
-                        Total Clicks: {this.state.totalCount}
                     </p>
                     <button onClick={this.handleIncrement}>
                         Increment

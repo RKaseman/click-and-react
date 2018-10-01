@@ -1,13 +1,13 @@
 
-.header {
-    width: 100%;
+.headerRight {
+    width: 24%;
     background-color: #464646;
+    margin-left: 20%;
 }
 
-.score {
+.scoreRight {
     width: 100%;
     text-align: center;
-    font-size: 3rem;
-    margin-bottom: 50px;
+    font-size: 2rem;
 }
 

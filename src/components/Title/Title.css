@@ -2,9 +2,9 @@
 .title {
     width: 100%;
     text-align: center;
-    font-size: 3rem;
-    text-decoration: underline;
-    color: #2A77AE;
+    font-size: 1.5rem;
+    color: #2a77ae;
+    text-shadow: 2px 1px 4px #000044;
     margin-bottom: 50px;
 }
 

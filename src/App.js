@@ -23,13 +23,15 @@ class App extends Component {
         return (
             <div className="App">
                 <Wrapper>
-                <header className="App-header flex-container">
-                        <Score />
-                    <img src={logo} className="App-logo" alt="logo" />
-                    <h1 className="App-title">Click-and-React<br />Don't click the same image twice</h1>
-                        <ScoreTotal />
-                </header>
-                <Title>[del]</Title>
+                    <Title>
+                        <header className="App-header flex-container">
+                            <Score />
+                            <img src={logo} className="App-logo" alt="logo" />
+                            <h1 className="App-title">Click-and-React</h1>
+                            <h2 className="App-subTitle">Don't click the same image twice</h2>
+                            <ScoreTotal />
+                        </header>
+                    </Title>
                     {this.state.logos.map(logo => (
                         <LogoModule
                             randomOrder={this.randomOrder}

@@ -2,16 +2,14 @@
 import React from "react";
 import "./ScoreTotal.css";
 
-class Score extends React.Component {
+class ScoreTotal extends React.Component {
     state = {
-        count: 0,
         totalCount: 0
     };
 
     handleIncrement = () => {
         if (this.state.totalCount < 12) {
         this.setState({
-            count: this.state.count + 1,
             totalCount: this.state.totalCount + 1
         });
         }
@@ -19,11 +17,8 @@ class Score extends React.Component {
 
     render() {
         return (
-            <div className="header">
-                <div className="score">
-                    <p>
-                        Current Score: {this.state.count}
-                    </p>
+            <div className="headerRight">
+                <div className="scoreRight">
                     <p>
                         Total Clicks: {this.state.totalCount}
                     </p>
@@ -36,5 +31,5 @@ class Score extends React.Component {
     }
 }
 
-export default Score;
+export default ScoreTotal;
 
