@@ -6,7 +6,7 @@ import Score from "./components/Score";
 import ScoreTotal from "./components/ScoreTotal";
 import Title from "./components/Title";
 import Wrapper from "./components/Wrapper";
-import logos from "./components/LogoModule/logos.json";
+import logos from "./logos.json";
 import "./App.css";
 
 class App extends Component {
