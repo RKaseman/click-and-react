@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import logo from './logo.svg';
 import LogoModule from "./components/LogoModule";
 import Score from "./components/Score";
+import ScoreTotal from "./components/ScoreTotal";
 import Title from "./components/Title";
 import Wrapper from "./components/Wrapper";
 import logos from "./components/LogoModule/logos.json";
@@ -23,9 +24,10 @@ class App extends Component {
             <div className="App">
                 <Wrapper>
                 <header className="App-header flex-container">
+                        <Score />
                     <img src={logo} className="App-logo" alt="logo" />
                     <h1 className="App-title">Click-and-React<br />Don't click the same image twice</h1>
-                        <Score />
+                        <ScoreTotal />
                 </header>
                 <Title>[del]</Title>
                     {this.state.logos.map(logo => (

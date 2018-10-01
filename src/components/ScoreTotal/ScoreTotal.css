@@ -1,0 +1,13 @@
+
+.header {
+    width: 100%;
+    background-color: #464646;
+}
+
+.score {
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 50px;
+}
+
