@@ -13,7 +13,7 @@ class App extends React.Component {
         logos: logos
     };
 
-    randomOrder = id => {
+    randomOrder = (id) => {
         const logos = this.state.logos.sort(logo => logo.id !== id);
         this.setState({ 
             logos 

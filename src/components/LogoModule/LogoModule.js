@@ -2,7 +2,7 @@
 import React from "react";
 import "./LogoModule.css";
 
-const LogoModule = props => {
+const LogoModule = (props) => {
     console.log(props.id);
     return (
         <div className="card">
