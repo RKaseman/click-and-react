@@ -18,7 +18,8 @@ class Score extends React.Component {
     };
 
     render() {
-        return (
+    console.log(this);
+    return (
             <div className="headerRight">
                 <div className="scoreRight">
                     <p>
