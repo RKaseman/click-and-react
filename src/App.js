@@ -4,7 +4,6 @@ import logo from './logo.svg';
 import LogoModule from "./components/LogoModule";
 import Score from "./components/Score";
 import ScoreTotal from "./components/ScoreTotal";
-import Title from "./components/Title";
 import Wrapper from "./components/Wrapper";
 import logos from "./logos.json";
 import "./App.css";
@@ -23,15 +22,13 @@ class App extends Component {
         return (
             <div className="App">
                 <Wrapper>
-                    <Title>
-                        <header className="App-header flex-container">
-                            <Score />
-                            <img src={logo} className="App-logo" alt="logo" />
-                            <h1 className="App-title">Click-and-React</h1>
-                            <h2 className="App-subTitle">Don't click the same image twice</h2>
-                            <ScoreTotal />
-                        </header>
-                    </Title>
+                    <header className="App-header flex-container">
+                        <Score />
+                        <img src={logo} className="App-logo" alt="logo" />
+                        <h1 className="App-title">Click-and-React</h1>
+                        <h2 className="App-subTitle">Don't click the same image twice</h2>
+                        <ScoreTotal />
+                    </header>
                     {this.state.logos.map(logo => (
                         <LogoModule
                             randomOrder={this.randomOrder}

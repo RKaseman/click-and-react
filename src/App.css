@@ -1,3 +1,4 @@
+
 .App {
     text-align: center;
 }
@@ -16,22 +17,26 @@
 
 .App-header {
     position: relative;
+    width: 100%;
+    height: 12rem;
     background-color: #222222;
-    height: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #2a77ae;
+    text-shadow: 2px 1px 4px #000044;
     padding: 16px;
-    /* color: #ffffff; */
 }
 
 .App-title {
     position: absolute;
     text-align: center;
-    top: 72px;
+    top: 80px;
     font-size: 2.5rem;
 }
 
 .App-subTitle {
     position: absolute;
-    top: 120px;
+    top: 136px;
     font-size: 2.0rem;
 }
 
@@ -43,3 +48,4 @@
         transform: rotate(360deg);
     }
 }
+
