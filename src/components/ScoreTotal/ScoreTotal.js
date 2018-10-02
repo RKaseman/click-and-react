@@ -20,7 +20,7 @@ class ScoreTotal extends React.Component {
             <div className="headerRight">
                 <div className="scoreRight">
                     <p>
-                        Total Clicks: {this.state.totalCount}
+                        High Score: {this.state.totalCount}
                     </p>
                     <button onClick={this.handleIncrement}>
                         Increment

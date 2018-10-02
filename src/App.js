@@ -10,15 +10,18 @@ import "./App.css";
 
 class App extends React.Component {
     state = {
-        logos
+        logos: logos
     };
 
     randomOrder = id => {
         const logos = this.state.logos.sort(logo => logo.id !== id);
-        this.setState({ logos });
+        this.setState({ 
+            logos 
+        });
     };
 
     render() {
+        console.log(this);
         return (
             <div className="App">
                 <header className="App-header flex-container">
