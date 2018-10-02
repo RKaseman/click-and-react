@@ -3,13 +3,13 @@ import React from "react";
 import "./LogoModule.css";
 
 const LogoModule = props => {
-    console.log(props.name);
+    console.log(props.id);
     return (
         <div className="card">
-            <img alt={props.name} src={props.image} onClick={() => props.randomOrder(props.id)} className="remove"/>
+            <img src={props.image} onClick={() => props.randomOrder(props.id)} alt="" />
         </div>
-        );
-    };
-    
+    );
+};
+
 export default LogoModule;
 

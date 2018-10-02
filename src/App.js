@@ -1,5 +1,5 @@
 
-import React, { Component } from "react";
+import React from "react";
 import logo from './logo.svg';
 import LogoModule from "./components/LogoModule";
 import Score from "./components/Score";
@@ -8,7 +8,7 @@ import Wrapper from "./components/Wrapper";
 import logos from "./logos.json";
 import "./App.css";
 
-class App extends Component {
+class App extends React.Component {
     state = {
         logos
     };
@@ -21,14 +21,14 @@ class App extends Component {
     render() {
         return (
             <div className="App">
+                <header className="App-header flex-container">
+                    <Score />
+                    <img src={logo} className="App-logo" alt="logo" />
+                    <h1 className="App-title">Click-and-React</h1>
+                    <h2 className="App-subTitle">Don't click the same image twice</h2>
+                    <ScoreTotal />
+                </header>
                 <Wrapper>
-                    <header className="App-header flex-container">
-                        <Score />
-                        <img src={logo} className="App-logo" alt="logo" />
-                        <h1 className="App-title">Click-and-React</h1>
-                        <h2 className="App-subTitle">Don't click the same image twice</h2>
-                        <ScoreTotal />
-                    </header>
                     {this.state.logos.map(logo => (
                         <LogoModule
                             randomOrder={this.randomOrder}

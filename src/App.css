@@ -10,21 +10,22 @@
     height: 96px;
 }
 
-.flex-container {
-    display: flex;
-    justify-content: center;
-}
-
 .App-header {
     position: relative;
-    width: 100%;
+    width: 88%;
     height: 12rem;
     background-color: #222222;
     text-align: center;
     font-size: 1.5rem;
     color: #2a77ae;
     text-shadow: 2px 1px 4px #000044;
+    margin: 0px auto;
     padding: 16px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
 }
 
 .App-title {
@@ -36,8 +37,8 @@
 
 .App-subTitle {
     position: absolute;
-    top: 136px;
-    font-size: 2.0rem;
+    top: 144px;
+    font-size: 1.75rem;
 }
 
 @keyframes App-logo-spin {

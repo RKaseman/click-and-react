@@ -1,6 +1,7 @@
 
 .wrapper {
-    background: #eceff1;
+    background: #dbdee0;
+    width: 64%;
     height: 100%;
     display: flex;
     flex-flow: row wrap;
