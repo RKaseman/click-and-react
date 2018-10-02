@@ -2,7 +2,8 @@
 import React from "react";
 import "./Rule.css";
 
-const Rule = () => {
+const Rule = (props) => {
+    console.log(props);
     return (
         <div className="headerLeft">
             <div className="scoreLeft">
