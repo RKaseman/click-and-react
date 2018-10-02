@@ -2,8 +2,8 @@
 import React from "react";
 import logo from './logo.svg';
 import LogoModule from "./components/LogoModule";
+import Rule from "./components/Rule";
 import Score from "./components/Score";
-import ScoreTotal from "./components/ScoreTotal";
 import Wrapper from "./components/Wrapper";
 import logos from "./logos.json";
 import "./App.css";
@@ -25,11 +25,10 @@ class App extends React.Component {
         return (
             <div className="App">
                 <header className="App-header flex-container">
-                    <Score />
+                    <Rule />
                     <img src={logo} className="App-logo" alt="logo" />
                     <h1 className="App-title">Click-and-React</h1>
-                    <h2 className="App-subTitle">Don't click the same image twice</h2>
-                    <ScoreTotal />
+                    <Score />
                 </header>
                 <Wrapper>
                     {this.state.logos.map(logo => (
