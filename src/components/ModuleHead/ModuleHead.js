@@ -1,9 +1,8 @@
 
 import React from "react";
-import "./Rule.css";
+import "./ModuleHead.css";
 
-const Rule = (props) => {
-    console.log(props);
+const ModuleHead = (props) => {
     return (
         <div className="headerLeft">
             <div className="scoreLeft">
@@ -15,5 +14,5 @@ const Rule = (props) => {
     );
 };
 
-export default Rule;
+export default ModuleHead;
 

@@ -1,9 +1,8 @@
 
 import React from "react";
-import LogoModule from "./components/LogoModule";
-import "./App.css";
+import MainModule from "./components/MainModule";
 
-const App = () => <LogoModule />
+const App = () => <MainModule />
 
 export default App;
 

@@ -1,24 +1,25 @@
 
 import React from "react";
-import "./LogoModule.css";
+import "./MainModule.css";
 import logo from '../../logo.svg';
-import Rule from "../Rule";
-import Score from "../Score";
+import ImgModule from "../ImgModule";
+import ModuleHead from "../ModuleHead";
 import Wrapper from "../Wrapper";
 import logos from "../../logos.json";
 
-
-
-
-class LogoModule extends React.Component {
+class MainModule extends React.Component {
     state = {
-        logos: logos
+        logos: logos,
+        count: 0,
+        totalCount: 0
     };
 
     randomOrder = (id) => {
         const logos = this.state.logos.sort(logo => logo.id !== id);
         this.setState({ 
-            logos 
+            logos: logos,
+            count: this.state.count + 1,
+            totalCount: this.state.totalCount + 1
         });
     };
 
@@ -27,10 +28,18 @@ class LogoModule extends React.Component {
         return (
             <div className="App">
                 <header className="App-header flex-container">
-                    <Rule />
+                    <ModuleHead />
                     <img src={logo} className="App-logo" alt="logo" />
                     <h1 className="App-title">Click-and-React</h1>
-                    <Score />
+                    <div className="headerRight">
+                        <div className="scoreRight">
+                            <p>
+                                Current Score: {this.state.count}
+                                <br />
+                                High Score: {this.state.totalCount}
+                            </p>
+                        </div>
+                    </div>
                 </header>
                 <Wrapper>
                     {this.state.logos.map(logo => (
@@ -44,20 +53,8 @@ class LogoModule extends React.Component {
                 </Wrapper>
             </div>
         );
-    }
-}
-
-
-
-
-const ImgModule = (props) => {
-    console.log(props.id);
-    return (
-        <div className="card">
-            <img src={props.image} onClick={() => props.randomOrder(props.id)} alt="" />
-        </div>
-    );
+    };
 };
 
-export default LogoModule;
+export default MainModule;
 
