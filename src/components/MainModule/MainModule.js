@@ -17,9 +17,8 @@ class MainModule extends React.Component {
 
     gameState = (id) => {
         const logos = this.state.logos.sort(logo => logo.id !== id);
-        console.log(id);
-        console.log(logo);
         console.log(this.state.clicked);
+        console.log(id);
         if (this.state.clicked === id) {
             this.setState({
                 count: 0
@@ -35,7 +34,6 @@ class MainModule extends React.Component {
     };
 
     render() {
-        console.log(this);
         return (
             <div className="App">
                 <header className="App-header flex-container">
