@@ -11,15 +11,18 @@ class MainModule extends React.Component {
     state = {
         logos: logos,
         count: 0,
-        totalCount: 0
+        totalCount: 0,
+        clicked: ""
     };
 
     gameState = (id) => {
         const logos = this.state.logos.sort(logo => logo.id !== id);
+        console.log(id);
         this.setState({ 
             logos: logos,
             count: this.state.count + 1,
-            totalCount: this.state.totalCount + 1
+            totalCount: this.state.totalCount + 1,
+            clicked: id
         });
     };
 
