@@ -1,7 +1,6 @@
 
 import React from "react";
 import "./MainModule.css";
-import logo from '../../logo.svg';
 import ModuleContent from "../ModuleContent";
 import ModuleHead from "../ModuleHead";
 import Wrapper from "../Wrapper";
@@ -36,18 +35,10 @@ class MainModule extends React.Component {
     render() {
         return (
             <div className="App">
-                <header className="App-header flex-container">
-                    <ModuleHead />
-                    <img src={logo} className="App-logo" alt="logo" />
-                    <h1 className="App-title">Click-and-React</h1>
-                    <div className="headerRight">
-                        <p>
-                            Current Score: {this.state.count}
-                            <br />
-                            High Score: {this.state.totalCount}
-                        </p>
-                    </div>
-                </header>
+                <ModuleHead
+                    count={this.state.count}
+                    totalCount={this.state.totalCount}
+                />
                 <Wrapper>
                     {this.state.logos.map(logo => (
                         <ModuleContent
