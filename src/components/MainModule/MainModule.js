@@ -32,13 +32,11 @@ class MainModule extends React.Component {
                     <img src={logo} className="App-logo" alt="logo" />
                     <h1 className="App-title">Click-and-React</h1>
                     <div className="headerRight">
-                        <div className="scoreRight">
-                            <p>
-                                Current Score: {this.state.count}
-                                <br />
-                                High Score: {this.state.totalCount}
-                            </p>
-                        </div>
+                        <p>
+                            Current Score: {this.state.count}
+                            <br />
+                            High Score: {this.state.totalCount}
+                        </p>
                     </div>
                 </header>
                 <Wrapper>

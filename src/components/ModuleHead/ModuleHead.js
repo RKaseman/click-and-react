@@ -5,11 +5,9 @@ import "./ModuleHead.css";
 const ModuleHead = (props) => {
     return (
         <div className="headerLeft">
-            <div className="scoreLeft">
-                <p>
+            <p>
                 Don't click the<br />same image twice
-                </p>
-            </div>
+            </p>
         </div>
     );
 };
