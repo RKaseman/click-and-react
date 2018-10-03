@@ -3,7 +3,6 @@ import React from "react";
 import "./ModuleContent.css";
 
 const ModuleContent = (props) => {
-    console.log(props.id);
     return (
         <div className="card">
             <img

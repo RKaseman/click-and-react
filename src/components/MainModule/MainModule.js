@@ -14,7 +14,7 @@ class MainModule extends React.Component {
         totalCount: 0
     };
 
-    gameStatus = (id) => {
+    gameState = (id) => {
         const logos = this.state.logos.sort(logo => logo.id !== id);
         this.setState({ 
             logos: logos,
@@ -44,10 +44,10 @@ class MainModule extends React.Component {
                 <Wrapper>
                     {this.state.logos.map(logo => (
                         <ModuleContent
-                            gameStatus={this.gameStatus}
-                            id={logo.id}
                             key={logo.id}
+                            id={logo.id}
                             image={logo.image}
+                            gameStatus={this.gameState}
                         />
                     ))}
                 </Wrapper>
