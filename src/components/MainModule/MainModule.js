@@ -2,7 +2,7 @@
 import React from "react";
 import "./MainModule.css";
 import logo from '../../logo.svg';
-import ImgModule from "../ImgModule";
+import ModuleContent from "../ModuleContent";
 import ModuleHead from "../ModuleHead";
 import Wrapper from "../Wrapper";
 import logos from "../../logos.json";
@@ -14,7 +14,7 @@ class MainModule extends React.Component {
         totalCount: 0
     };
 
-    randomOrder = (id) => {
+    gameStatus = (id) => {
         const logos = this.state.logos.sort(logo => logo.id !== id);
         this.setState({ 
             logos: logos,
@@ -43,8 +43,8 @@ class MainModule extends React.Component {
                 </header>
                 <Wrapper>
                     {this.state.logos.map(logo => (
-                        <ImgModule
-                            randomOrder={this.randomOrder}
+                        <ModuleContent
+                            gameStatus={this.gameStatus}
                             id={logo.id}
                             key={logo.id}
                             image={logo.image}

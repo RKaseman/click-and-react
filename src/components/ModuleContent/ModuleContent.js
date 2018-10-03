@@ -1,19 +1,19 @@
 
 import React from "react";
-import "./ImgModule.css";
+import "./ModuleContent.css";
 
-const ImgModule = (props) => {
+const ModuleContent = (props) => {
     console.log(props.id);
     return (
         <div className="card">
             <img
             className="App-card"
             src={props.image}
-            onClick={() => props.randomOrder(props.id)}
+            onClick={() => props.gameStatus(props.id)}
             alt="" />
         </div>
     );
 };
 
-export default ImgModule;
+export default ModuleContent;
 
