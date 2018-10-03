@@ -52,6 +52,7 @@ class MainModule extends React.Component {
             </div>
         );
     };
+
 };
 
 export default MainModule;
