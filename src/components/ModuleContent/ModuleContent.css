@@ -8,7 +8,6 @@
 }
 
 .App-card {
-    text-align: center;
     animation: App-card-spin infinite 20s linear;
 }
 

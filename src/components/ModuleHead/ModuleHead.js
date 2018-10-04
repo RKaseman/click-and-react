@@ -8,11 +8,15 @@ const ModuleHead = (props) => {
         <header className="App-header flex-container">
             <div className="headerLeft">
                 <p>
-                    Don't click the<br />same image twice
+                    Don't click the
+                    <br />
+                    same image twice
                 </p>
             </div>
-            <img src={logo} className="App-logo" alt="logo" />
-            <h1 className="App-title">Click-and-React</h1>
+            <div className="headerMiddle">
+                <img src={logo} className="App-logo" alt="logo" />
+                <h1 className="App-title">Click-and-React</h1>
+            </div>
             <div className="headerRight">
                 <p>
                     Current Score: {props.count}
